@@ -1,0 +1,249 @@
+aid: openllmetry
+url: https://raw.githubusercontent.com/api-evangelist/openllmetry/refs/heads/main/apis.yml
+name: OpenLLMetry
+kind: opensource
+description: OpenLLMetry is an open-source observability framework for LLM and generative AI applications, built
+  on top of OpenTelemetry. Maintained by Traceloop under the Apache 2.0 license, it provides drop-in
+  instrumentation for 30+ LLM providers, vector databases, and agent frameworks, and emits standardized
+  GenAI traces over OTLP to any observability backend (Datadog, Grafana, Honeycomb, New Relic, Splunk,
+  Langfuse, LangSmith, Braintrust, and the Traceloop platform). Its semantic conventions for LLMs have
+  been upstreamed into the OpenTelemetry GenAI semantic conventions.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- AI
+- LLM
+- Observability
+- Open Source
+- OpenTelemetry
+- Tracing
+- GenAI
+created: '2026-05-25'
+modified: '2026-05-25'
+specificationVersion: '0.19'
+apis:
+- aid: openllmetry:openllmetry-traceloop-sdk
+  name: OpenLLMetry Traceloop SDK
+  tags:
+  - SDK
+  - Instrumentation
+  - Tracing
+  image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+  humanURL: https://www.traceloop.com/docs/openllmetry/introduction
+  properties:
+  - url: https://www.traceloop.com/docs/openllmetry/introduction
+    type: Documentation
+  - url: https://github.com/traceloop/openllmetry
+    type: GitHubRepository
+  - url: https://pypi.org/project/traceloop-sdk/
+    type: SDK
+  - url: https://www.npmjs.com/package/@traceloop/node-server-sdk
+    type: SDK
+  - url: https://www.traceloop.com/docs/openllmetry/getting-started-python
+    type: GettingStarted
+  - url: https://www.traceloop.com/docs/openllmetry/getting-started-nextjs
+    type: GettingStarted
+  - url: https://www.traceloop.com/docs/openllmetry/getting-started-go
+    type: GettingStarted
+  - url: https://www.traceloop.com/docs/openllmetry/getting-started-ruby
+    type: GettingStarted
+  description: The Traceloop SDK is the developer-facing entry point for OpenLLMetry. A single Traceloop.init()
+    call configures OpenTelemetry, registers all available LLM/vector-DB/framework instrumentations, and
+    starts exporting GenAI traces to any OTLP endpoint. Provides @workflow, @task, @agent, and @tool
+    decorators (and TypeScript equivalents) for higher-level tracing primitives, plus controls for prompt
+    redaction, multi-modality content, user feedback, sessions, and prompt versioning.
+- aid: openllmetry:openllmetry-semantic-conventions-ai
+  name: OpenLLMetry Semantic Conventions for AI
+  tags:
+  - Semantic Conventions
+  - OpenTelemetry
+  - GenAI
+  image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+  humanURL: https://opentelemetry.io/docs/specs/semconv/gen-ai/
+  properties:
+  - url: https://opentelemetry.io/docs/specs/semconv/gen-ai/
+    type: Documentation
+  - url: https://github.com/traceloop/openllmetry/tree/main/packages/opentelemetry-semantic-conventions-ai
+    type: GitHubRepository
+  - url: https://pypi.org/project/opentelemetry-semantic-conventions-ai/
+    type: SDK
+  description: A vocabulary of span attribute names for GenAI workloads — gen_ai.system, gen_ai.request.model,
+    gen_ai.response.model, gen_ai.usage.input_tokens, gen_ai.usage.output_tokens, llm.prompts, llm.completions,
+    traceloop.workflow.name, traceloop.entity.name, and others. Originated in OpenLLMetry and has been
+    upstreamed into the OpenTelemetry GenAI semantic conventions, giving cross-vendor observability
+    backends a shared schema for LLM telemetry.
+- aid: openllmetry:openllmetry-llm-instrumentations
+  name: OpenLLMetry LLM Provider Instrumentations
+  tags:
+  - Instrumentation
+  - LLM Providers
+  - Tracing
+  image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+  humanURL: https://www.traceloop.com/docs/openllmetry/integrations/exporters
+  properties:
+  - url: https://www.traceloop.com/docs/openllmetry/integrations/exporters
+    type: Documentation
+  - url: https://github.com/traceloop/openllmetry/tree/main/packages
+    type: GitHubRepository
+  - url: https://pypi.org/project/opentelemetry-instrumentation-openai/
+    type: SDK
+  - url: https://pypi.org/project/opentelemetry-instrumentation-anthropic/
+    type: SDK
+  - url: https://pypi.org/project/opentelemetry-instrumentation-bedrock/
+    type: SDK
+  - url: https://pypi.org/project/opentelemetry-instrumentation-google-generativeai/
+    type: SDK
+  - url: https://pypi.org/project/opentelemetry-instrumentation-cohere/
+    type: SDK
+  - url: https://pypi.org/project/opentelemetry-instrumentation-mistralai/
+    type: SDK
+  - url: https://pypi.org/project/opentelemetry-instrumentation-ollama/
+    type: SDK
+  - url: https://pypi.org/project/opentelemetry-instrumentation-groq/
+    type: SDK
+  - url: https://pypi.org/project/opentelemetry-instrumentation-together/
+    type: SDK
+  - url: https://pypi.org/project/opentelemetry-instrumentation-replicate/
+    type: SDK
+  - url: https://pypi.org/project/opentelemetry-instrumentation-vertexai/
+    type: SDK
+  - url: https://pypi.org/project/opentelemetry-instrumentation-sagemaker/
+    type: SDK
+  - url: https://pypi.org/project/opentelemetry-instrumentation-watsonx/
+    type: SDK
+  - url: https://pypi.org/project/opentelemetry-instrumentation-alephalpha/
+    type: SDK
+  - url: https://pypi.org/project/opentelemetry-instrumentation-transformers/
+    type: SDK
+  - url: https://pypi.org/project/opentelemetry-instrumentation-voyageai/
+    type: SDK
+  - url: https://pypi.org/project/opentelemetry-instrumentation-writer/
+    type: SDK
+  description: Drop-in OpenTelemetry instrumentations for the major LLM providers including OpenAI, Anthropic,
+    AWS Bedrock, Google Generative AI / Vertex AI, Cohere, Mistral AI, Ollama, Groq, Together AI, Replicate,
+    SageMaker, Watsonx, Aleph Alpha, HuggingFace Transformers, Voyage AI, and Writer. Each package
+    monkey-patches the provider SDK to emit standardized gen_ai.* spans without code changes.
+- aid: openllmetry:openllmetry-vector-db-instrumentations
+  name: OpenLLMetry Vector Database Instrumentations
+  tags:
+  - Instrumentation
+  - Vector Databases
+  - RAG
+  image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+  humanURL: https://www.traceloop.com/docs/openllmetry/tracing/decorators
+  properties:
+  - url: https://www.traceloop.com/docs/openllmetry/tracing/decorators
+    type: Documentation
+  - url: https://github.com/traceloop/openllmetry/tree/main/packages
+    type: GitHubRepository
+  - url: https://pypi.org/project/opentelemetry-instrumentation-chromadb/
+    type: SDK
+  - url: https://pypi.org/project/opentelemetry-instrumentation-pinecone/
+    type: SDK
+  - url: https://pypi.org/project/opentelemetry-instrumentation-qdrant/
+    type: SDK
+  - url: https://pypi.org/project/opentelemetry-instrumentation-weaviate/
+    type: SDK
+  - url: https://pypi.org/project/opentelemetry-instrumentation-lancedb/
+    type: SDK
+  - url: https://pypi.org/project/opentelemetry-instrumentation-milvus/
+    type: SDK
+  - url: https://pypi.org/project/opentelemetry-instrumentation-marqo/
+    type: SDK
+  description: Instrumentations for vector databases used in retrieval-augmented generation pipelines —
+    Chroma, Pinecone, Qdrant, Weaviate, LanceDB, Milvus, and Marqo. Captures query, upsert, and similarity-
+    search operations with vector-DB-specific attributes so RAG retrievals can be correlated with the LLM
+    calls that consumed them.
+- aid: openllmetry:openllmetry-framework-instrumentations
+  name: OpenLLMetry Framework and Agent Instrumentations
+  tags:
+  - Instrumentation
+  - Frameworks
+  - Agents
+  image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+  humanURL: https://www.traceloop.com/docs/openllmetry/integrations
+  properties:
+  - url: https://www.traceloop.com/docs/openllmetry/integrations
+    type: Documentation
+  - url: https://github.com/traceloop/openllmetry/tree/main/packages
+    type: GitHubRepository
+  - url: https://pypi.org/project/opentelemetry-instrumentation-langchain/
+    type: SDK
+  - url: https://pypi.org/project/opentelemetry-instrumentation-llamaindex/
+    type: SDK
+  - url: https://pypi.org/project/opentelemetry-instrumentation-haystack/
+    type: SDK
+  - url: https://pypi.org/project/opentelemetry-instrumentation-crewai/
+    type: SDK
+  - url: https://pypi.org/project/opentelemetry-instrumentation-agno/
+    type: SDK
+  - url: https://pypi.org/project/opentelemetry-instrumentation-openai-agents/
+    type: SDK
+  - url: https://pypi.org/project/opentelemetry-instrumentation-mcp/
+    type: SDK
+  description: Instrumentations for higher-level LLM frameworks and agent runtimes — LangChain, LlamaIndex,
+    Haystack, CrewAI, Agno, OpenAI Agents, and Model Context Protocol (MCP). Captures chain, retriever,
+    agent, and tool spans alongside the underlying LLM and vector-DB calls so multi-step workflows can be
+    debugged end-to-end.
+- aid: openllmetry:openllmetry-otlp-exporters
+  name: OpenLLMetry OTLP Exporters
+  tags:
+  - Exporters
+  - OTLP
+  - OpenTelemetry
+  image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+  humanURL: https://www.traceloop.com/docs/openllmetry/integrations/exporters
+  properties:
+  - url: https://www.traceloop.com/docs/openllmetry/integrations/exporters
+    type: Documentation
+  - url: https://www.traceloop.com/docs/openllmetry/integrations/datadog
+    type: Integrations
+  - url: https://www.traceloop.com/docs/openllmetry/integrations/grafana
+    type: Integrations
+  - url: https://www.traceloop.com/docs/openllmetry/integrations/honeycomb
+    type: Integrations
+  - url: https://www.traceloop.com/docs/openllmetry/integrations/newrelic
+    type: Integrations
+  - url: https://www.traceloop.com/docs/openllmetry/integrations/splunk
+    type: Integrations
+  - url: https://www.traceloop.com/docs/openllmetry/integrations/azureappinsights
+    type: Integrations
+  - url: https://www.traceloop.com/docs/openllmetry/integrations/gcp
+    type: Integrations
+  - url: https://www.traceloop.com/docs/openllmetry/integrations/langfuse
+    type: Integrations
+  - url: https://www.traceloop.com/docs/openllmetry/integrations/langsmith
+    type: Integrations
+  - url: https://www.traceloop.com/docs/openllmetry/integrations/braintrust
+    type: Integrations
+  description: OpenLLMetry emits standard OpenTelemetry traces and metrics over OTLP (gRPC or HTTP), so any
+    OpenTelemetry-compatible backend can receive its telemetry. Supported destinations include Datadog,
+    Grafana Tempo/Loki, Honeycomb, New Relic, Splunk, Dynatrace, Instana, Azure Application Insights,
+    Google Cloud Trace, OCI APM, Highlight, Traceloop, Langfuse, LangSmith, and Braintrust, as well as
+    self-hosted OpenTelemetry Collectors.
+common:
+- type: Website
+  url: https://www.traceloop.com/openllmetry
+- type: Documentation
+  url: https://www.traceloop.com/docs/openllmetry/introduction
+- type: GitHubRepository
+  url: https://github.com/traceloop/openllmetry
+- type: GitHubRepository
+  url: https://github.com/traceloop/openllmetry-js
+- type: License
+  url: https://github.com/traceloop/openllmetry/blob/main/LICENSE
+- type: Maintainer
+  url: https://www.traceloop.com/
+- type: Discord
+  url: https://traceloop.com/slack
+- type: Blog
+  url: https://www.traceloop.com/blog
+- type: GettingStarted
+  url: https://www.traceloop.com/docs/openllmetry/quick-start/python
+- type: Integrations
+  url: https://www.traceloop.com/docs/openllmetry/integrations
+- type: SemanticConventions
+  url: https://opentelemetry.io/docs/specs/semconv/gen-ai/
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+include: []
