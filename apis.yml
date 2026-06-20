@@ -8,7 +8,7 @@ description: OpenLLMetry is an open-source observability framework for LLM and g
   GenAI traces over OTLP to any observability backend (Datadog, Grafana, Honeycomb, New Relic, Splunk,
   Langfuse, LangSmith, Braintrust, and the Traceloop platform). Its semantic conventions for LLMs have
   been upstreamed into the OpenTelemetry GenAI semantic conventions.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
 - AI
 - LLM
@@ -27,7 +27,7 @@ apis:
   - SDK
   - Instrumentation
   - Tracing
-  image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://www.traceloop.com/docs/openllmetry/introduction
   properties:
   - url: https://www.traceloop.com/docs/openllmetry/introduction
@@ -57,7 +57,7 @@ apis:
   - Semantic Conventions
   - OpenTelemetry
   - GenAI
-  image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://opentelemetry.io/docs/specs/semconv/gen-ai/
   properties:
   - url: https://opentelemetry.io/docs/specs/semconv/gen-ai/
@@ -77,7 +77,7 @@ apis:
   - Instrumentation
   - LLM Providers
   - Tracing
-  image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://www.traceloop.com/docs/openllmetry/integrations/exporters
   properties:
   - url: https://www.traceloop.com/docs/openllmetry/integrations/exporters
@@ -128,7 +128,7 @@ apis:
   - Instrumentation
   - Vector Databases
   - RAG
-  image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://www.traceloop.com/docs/openllmetry/tracing/decorators
   properties:
   - url: https://www.traceloop.com/docs/openllmetry/tracing/decorators
@@ -159,7 +159,7 @@ apis:
   - Instrumentation
   - Frameworks
   - Agents
-  image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://www.traceloop.com/docs/openllmetry/integrations
   properties:
   - url: https://www.traceloop.com/docs/openllmetry/integrations
@@ -190,7 +190,7 @@ apis:
   - Exporters
   - OTLP
   - OpenTelemetry
-  image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://www.traceloop.com/docs/openllmetry/integrations/exporters
   properties:
   - url: https://www.traceloop.com/docs/openllmetry/integrations/exporters
