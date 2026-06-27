@@ -35,9 +35,9 @@ apis:
   - url: https://github.com/traceloop/openllmetry
     type: GitHubRepository
   - url: https://pypi.org/project/traceloop-sdk/
-    type: SDK
+    type: SDKs
   - url: https://www.npmjs.com/package/@traceloop/node-server-sdk
-    type: SDK
+    type: SDKs
   - url: https://www.traceloop.com/docs/openllmetry/getting-started-python
     type: GettingStarted
   - url: https://www.traceloop.com/docs/openllmetry/getting-started-nextjs
@@ -65,7 +65,7 @@ apis:
   - url: https://github.com/traceloop/openllmetry/tree/main/packages/opentelemetry-semantic-conventions-ai
     type: GitHubRepository
   - url: https://pypi.org/project/opentelemetry-semantic-conventions-ai/
-    type: SDK
+    type: SDKs
   description: A vocabulary of span attribute names for GenAI workloads — gen_ai.system, gen_ai.request.model,
     gen_ai.response.model, gen_ai.usage.input_tokens, gen_ai.usage.output_tokens, llm.prompts, llm.completions,
     traceloop.workflow.name, traceloop.entity.name, and others. Originated in OpenLLMetry and has been
@@ -85,39 +85,39 @@ apis:
   - url: https://github.com/traceloop/openllmetry/tree/main/packages
     type: GitHubRepository
   - url: https://pypi.org/project/opentelemetry-instrumentation-openai/
-    type: SDK
+    type: SDKs
   - url: https://pypi.org/project/opentelemetry-instrumentation-anthropic/
-    type: SDK
+    type: SDKs
   - url: https://pypi.org/project/opentelemetry-instrumentation-bedrock/
-    type: SDK
+    type: SDKs
   - url: https://pypi.org/project/opentelemetry-instrumentation-google-generativeai/
-    type: SDK
+    type: SDKs
   - url: https://pypi.org/project/opentelemetry-instrumentation-cohere/
-    type: SDK
+    type: SDKs
   - url: https://pypi.org/project/opentelemetry-instrumentation-mistralai/
-    type: SDK
+    type: SDKs
   - url: https://pypi.org/project/opentelemetry-instrumentation-ollama/
-    type: SDK
+    type: SDKs
   - url: https://pypi.org/project/opentelemetry-instrumentation-groq/
-    type: SDK
+    type: SDKs
   - url: https://pypi.org/project/opentelemetry-instrumentation-together/
-    type: SDK
+    type: SDKs
   - url: https://pypi.org/project/opentelemetry-instrumentation-replicate/
-    type: SDK
+    type: SDKs
   - url: https://pypi.org/project/opentelemetry-instrumentation-vertexai/
-    type: SDK
+    type: SDKs
   - url: https://pypi.org/project/opentelemetry-instrumentation-sagemaker/
-    type: SDK
+    type: SDKs
   - url: https://pypi.org/project/opentelemetry-instrumentation-watsonx/
-    type: SDK
+    type: SDKs
   - url: https://pypi.org/project/opentelemetry-instrumentation-alephalpha/
-    type: SDK
+    type: SDKs
   - url: https://pypi.org/project/opentelemetry-instrumentation-transformers/
-    type: SDK
+    type: SDKs
   - url: https://pypi.org/project/opentelemetry-instrumentation-voyageai/
-    type: SDK
+    type: SDKs
   - url: https://pypi.org/project/opentelemetry-instrumentation-writer/
-    type: SDK
+    type: SDKs
   description: Drop-in OpenTelemetry instrumentations for the major LLM providers including OpenAI, Anthropic,
     AWS Bedrock, Google Generative AI / Vertex AI, Cohere, Mistral AI, Ollama, Groq, Together AI, Replicate,
     SageMaker, Watsonx, Aleph Alpha, HuggingFace Transformers, Voyage AI, and Writer. Each package
@@ -136,19 +136,19 @@ apis:
   - url: https://github.com/traceloop/openllmetry/tree/main/packages
     type: GitHubRepository
   - url: https://pypi.org/project/opentelemetry-instrumentation-chromadb/
-    type: SDK
+    type: SDKs
   - url: https://pypi.org/project/opentelemetry-instrumentation-pinecone/
-    type: SDK
+    type: SDKs
   - url: https://pypi.org/project/opentelemetry-instrumentation-qdrant/
-    type: SDK
+    type: SDKs
   - url: https://pypi.org/project/opentelemetry-instrumentation-weaviate/
-    type: SDK
+    type: SDKs
   - url: https://pypi.org/project/opentelemetry-instrumentation-lancedb/
-    type: SDK
+    type: SDKs
   - url: https://pypi.org/project/opentelemetry-instrumentation-milvus/
-    type: SDK
+    type: SDKs
   - url: https://pypi.org/project/opentelemetry-instrumentation-marqo/
-    type: SDK
+    type: SDKs
   description: Instrumentations for vector databases used in retrieval-augmented generation pipelines —
     Chroma, Pinecone, Qdrant, Weaviate, LanceDB, Milvus, and Marqo. Captures query, upsert, and similarity-
     search operations with vector-DB-specific attributes so RAG retrievals can be correlated with the LLM
@@ -167,19 +167,19 @@ apis:
   - url: https://github.com/traceloop/openllmetry/tree/main/packages
     type: GitHubRepository
   - url: https://pypi.org/project/opentelemetry-instrumentation-langchain/
-    type: SDK
+    type: SDKs
   - url: https://pypi.org/project/opentelemetry-instrumentation-llamaindex/
-    type: SDK
+    type: SDKs
   - url: https://pypi.org/project/opentelemetry-instrumentation-haystack/
-    type: SDK
+    type: SDKs
   - url: https://pypi.org/project/opentelemetry-instrumentation-crewai/
-    type: SDK
+    type: SDKs
   - url: https://pypi.org/project/opentelemetry-instrumentation-agno/
-    type: SDK
+    type: SDKs
   - url: https://pypi.org/project/opentelemetry-instrumentation-openai-agents/
-    type: SDK
+    type: SDKs
   - url: https://pypi.org/project/opentelemetry-instrumentation-mcp/
-    type: SDK
+    type: SDKs
   description: Instrumentations for higher-level LLM frameworks and agent runtimes — LangChain, LlamaIndex,
     Haystack, CrewAI, Agno, OpenAI Agents, and Model Context Protocol (MCP). Captures chain, retriever,
     agent, and tool spans alongside the underlying LLM and vector-DB calls so multi-step workflows can be
