@@ -221,6 +221,8 @@ apis:
     Google Cloud Trace, OCI APM, Highlight, Traceloop, Langfuse, LangSmith, and Braintrust, as well as
     self-hosted OpenTelemetry Collectors.
 common:
+- type: DomainSecurity
+  url: security/openllmetry-domain-security.yml
 - type: Website
   url: https://www.traceloop.com/openllmetry
 - type: Documentation
