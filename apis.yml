@@ -8,7 +8,18 @@ description: OpenLLMetry is an open-source observability framework for LLM and g
   GenAI traces over OTLP to any observability backend (Datadog, Grafana, Honeycomb, New Relic, Splunk,
   Langfuse, LangSmith, Braintrust, and the Traceloop platform). Its semantic conventions for LLMs have
   been upstreamed into the OpenTelemetry GenAI semantic conventions.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/openllmetry.png
 tags:
 - AI
 - LLM
