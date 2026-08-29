@@ -8,6 +8,17 @@ description: OpenLLMetry is an open-source observability framework for LLM and g
   GenAI traces over OTLP to any observability backend (Datadog, Grafana, Honeycomb, New Relic, Splunk,
   Langfuse, LangSmith, Braintrust, and the Traceloop platform). Its semantic conventions for LLMs have
   been upstreamed into the OpenTelemetry GenAI semantic conventions.
+deliveryModel:
+  model: unknown
+  open_source: unknown
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - repository-unlicensed
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
@@ -240,6 +251,16 @@ apis:
     Google Cloud Trace, OCI APM, Highlight, Traceloop, Langfuse, LangSmith, and Braintrust, as well as
     self-hosted OpenTelemetry Collectors.
 common:
+- type: IssueTracker
+  url: https://github.com/traceloop/openllmetry/issues
+- type: Releases
+  url: https://github.com/traceloop/openllmetry/releases
+- type: SecurityPolicy
+  url: https://github.com/traceloop/openllmetry/blob/main/SECURITY.md
+- type: CodeOfConduct
+  url: https://github.com/traceloop/openllmetry/blob/main/CODE_OF_CONDUCT.md
+- type: ContributionGuide
+  url: https://github.com/traceloop/openllmetry/blob/main/CONTRIBUTING.md
 - type: DomainSecurity
   url: security/openllmetry-domain-security.yml
 - type: Website
