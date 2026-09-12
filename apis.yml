@@ -289,3 +289,5 @@ maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 include: []
+x-parent: traceloop
+x-relationship: product
