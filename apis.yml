@@ -38,7 +38,7 @@ tags:
 - Open-Source
 - OpenTelemetry
 - Tracing
-- GenAI
+- Generative AI
 tags_raw:
 - AI
 - LLM
@@ -84,6 +84,10 @@ apis:
 - aid: openllmetry:openllmetry-semantic-conventions-ai
   name: OpenLLMetry Semantic Conventions for AI
   tags:
+  - Semantic Conventions
+  - OpenTelemetry
+  - Generative AI
+  tags_raw:
   - Semantic Conventions
   - OpenTelemetry
   - GenAI
@@ -156,6 +160,10 @@ apis:
   name: OpenLLMetry Vector Database Instrumentations
   tags:
   - Instrumentation
+  - Vector Database
+  - RAG
+  tags_raw:
+  - Instrumentation
   - Vector Databases
   - RAG
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
@@ -186,6 +194,10 @@ apis:
 - aid: openllmetry:openllmetry-framework-instrumentations
   name: OpenLLMetry Framework and Agent Instrumentations
   tags:
+  - Instrumentation
+  - Framework
+  - Agents
+  tags_raw:
   - Instrumentation
   - Frameworks
   - Agents
