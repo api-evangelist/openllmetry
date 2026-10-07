@@ -1,0 +1,40 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://www.traceloop.com/pricing
+sources:
+- https://www.traceloop.com/pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T112025
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: usage-other
+delivery:
+  delivery: open-core
+  method: page
+  read: '2026-10-07'
+  evidence: OpenLLMetry is Apache-2.0 licensed and you can use it for free, and connect it to any of the
+    25+ supported observability platforms (Traceloop included).
+  free_edition: OpenLLMetry
+  open_source_license: Apache-2.0
+published: true
+note: Free tier plus negotiated enterprise; OpenLLMetry stated Apache-2.0 and free. Also offered via AWS/GCP/Azure
+  Marketplaces with free 14-day trial.
+plan_count: 2
+currency: USD
+plans:
+- name: Free Forever
+  price_text: $0 / mo
+  price: 0
+  currency: USD
+  period: month
+  unit: spans
+  included_quota: Up to 50K spans / month, Up to 5 Seats, 24 Hours Data Retention
+- name: Enterprise
+  price_text: Let's chat
+  period: none
+  included_quota: '>50K spans / month, Unlimited Seats, Custom Data Retention, SOC 2 Compliance, On-prem
+    deployment option, Dedicated slack support'
+rate_limit_statements:
+- Up to 50K spans / month
