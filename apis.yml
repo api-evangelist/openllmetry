@@ -269,6 +269,10 @@ apis:
     Google Cloud Trace, OCI APM, Highlight, Traceloop, Langfuse, LangSmith, and Braintrust, as well as
     self-hosted OpenTelemetry Collectors.
 common:
+- type: Pricing
+  url: https://www.traceloop.com/pricing
+- type: Plans
+  url: plans/openllmetry-plans-pricing.yml
 - type: IssueTracker
   url: https://github.com/traceloop/openllmetry/issues
 - type: Releases
