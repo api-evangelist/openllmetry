@@ -38,3 +38,25 @@ plans:
     deployment option, Dedicated slack support'
 rate_limit_statements:
 - Up to 50K spans / month
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  units: []
+  plans:
+  - name: Free Forever
+    access: other
+    model: free
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
+  - name: Enterprise
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
