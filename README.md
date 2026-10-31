@@ -1,4 +1,4 @@
-# OpenLLMetry (openllmetry)
+# OpenLLMetry
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,55 +64,98 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-OpenLLMetry is an open-source observability framework for LLM and generative AI applications, built on top of OpenTelemetry. Maintained by Traceloop under the Apache 2.0 license, it provides drop-in instrumentation for 30+ LLM providers, vector databases, and agent frameworks, and emits standardized GenAI traces over OTLP to any observability backend. Its semantic conventions for LLMs have been upstreamed into the OpenTelemetry GenAI semantic conventions.
+OpenLLMetry is an open-source observability framework for LLM and generative AI applications, built on top of OpenTelemetry. Maintained by Traceloop under the Apache 2.0 license, it provides drop-in instrumentation for 30+ LLM providers, vector databases, and agent frameworks, and emits standardized GenAI traces over OTLP to any observability backend (Datadog, Grafana, Honeycomb, New Relic, Splunk, Langfuse, LangSmith, Braintrust, and the Traceloop platform). Its semantic conventions for LLMs have been upstreamed into the OpenTelemetry GenAI semantic conventions.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/openllmetry/refs/heads/main/apis.yml)
+**Areas:** Artificial Intelligence · LLM · Observability · Open Source · OpenTelemetry · Tracing · Generative AI
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=openllmetry-api-evangelist&utm_content=repo)
+## OpenLLMetry on APIs.io
 
-## Type
+Everything profiled for OpenLLMetry is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/openllmetry/](https://apis.io/providers/openllmetry/)** — or go straight to one of the APIs or properties below.
 
-- **x-type:** opensource
+### APIs (6)
 
-## Tags
+- [OpenLLMetry Traceloop SDK](https://apis.io/apis/openllmetry/openllmetry-traceloop-sdk/) — The Traceloop SDK is the developer-facing entry point for OpenLLMetry. A single Traceloop.init() call configures OpenTelemetry, registers all available…
+- [OpenLLMetry Semantic Conventions for AI](https://apis.io/apis/openllmetry/openllmetry-semantic-conventions-ai/) — A vocabulary of span attribute names for GenAI workloads — gen_ai.system, gen_ai.request.model, gen_ai.response.model, gen_ai.usage.input_tokens,…
+- [OpenLLMetry LLM Provider Instrumentations](https://apis.io/apis/openllmetry/openllmetry-llm-instrumentations/) — Drop-in OpenTelemetry instrumentations for the major LLM providers including OpenAI, Anthropic, AWS Bedrock, Google Generative AI / Vertex AI, Cohere,…
+- [OpenLLMetry Vector Database Instrumentations](https://apis.io/apis/openllmetry/openllmetry-vector-db-instrumentations/) — Instrumentations for vector databases used in retrieval-augmented generation pipelines — Chroma, Pinecone, Qdrant, Weaviate, LanceDB, Milvus, and Marqo.…
+- [OpenLLMetry Framework and Agent Instrumentations](https://apis.io/apis/openllmetry/openllmetry-framework-instrumentations/) — Instrumentations for higher-level LLM frameworks and agent runtimes — LangChain, LlamaIndex, Haystack, CrewAI, Agno, OpenAI Agents, and Model Context…
+- [OpenLLMetry OTLP Exporters](https://apis.io/apis/openllmetry/openllmetry-otlp-exporters/) — OpenLLMetry emits standard OpenTelemetry traces and metrics over OTLP (gRPC or HTTP), so any OpenTelemetry-compatible backend can receive its telemetry.…
 
-- AI, LLM, Observability, Open Source, OpenTelemetry, Tracing, GenAI
+### Published properties
 
-## Timestamps
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- **Created:** 2026-05-25
-- **Modified:** 2026-05-25
+#### Security (1)
 
-## APIs
+Authentication, trust centre, and vulnerability disclosure.
 
-| API | Description |
-|---|---|
-| OpenLLMetry Traceloop SDK | One-call SDK that registers all instrumentations and exports GenAI traces over OTLP. |
-| OpenLLMetry Semantic Conventions for AI | Standard span attribute vocabulary for LLM telemetry; upstreamed into OpenTelemetry GenAI semconv. |
-| OpenLLMetry LLM Provider Instrumentations | OpenTelemetry instrumentations for OpenAI, Anthropic, Bedrock, Vertex AI, Cohere, Mistral, Ollama, Groq, Together, Replicate, SageMaker, Watsonx, and more. |
-| OpenLLMetry Vector Database Instrumentations | Instrumentations for Chroma, Pinecone, Qdrant, Weaviate, LanceDB, Milvus, and Marqo. |
-| OpenLLMetry Framework and Agent Instrumentations | Instrumentations for LangChain, LlamaIndex, Haystack, CrewAI, Agno, OpenAI Agents, and MCP. |
-| OpenLLMetry OTLP Exporters | Standard OTLP export to Datadog, Grafana, Honeycomb, New Relic, Splunk, Langfuse, LangSmith, Braintrust, Traceloop, and any OTel-compatible backend. |
+- [Openllmetry Domain Security](https://apis.io/security/openllmetry/openllmetry-domain-security/)
 
-## Common Properties
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Openllmetry Plans Pricing](https://apis.io/plans/openllmetry/openllmetry-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.traceloop.com/openllmetry)
 - [Documentation](https://www.traceloop.com/docs/openllmetry/introduction)
-- [GitHub (Python)](https://github.com/traceloop/openllmetry)
-- [GitHub (JS/TS)](https://github.com/traceloop/openllmetry-js)
-- [License (Apache 2.0)](https://github.com/traceloop/openllmetry/blob/main/LICENSE)
-- [Maintainer (Traceloop)](https://www.traceloop.com/)
-- [Slack Community](https://traceloop.com/slack)
-- [Getting Started (Python)](https://www.traceloop.com/docs/openllmetry/quick-start/python)
-- [Integrations](https://www.traceloop.com/docs/openllmetry/integrations)
-- [OpenTelemetry GenAI Semantic Conventions](https://opentelemetry.io/docs/specs/semconv/gen-ai/)
+- [Getting started](https://www.traceloop.com/docs/openllmetry/quick-start/python)
+- [Pricing](https://www.traceloop.com/pricing)
+- [Blog](https://www.traceloop.com/blog)
 
-## Notes
+## API Evangelist rating
 
-OpenLLMetry is a client-side instrumentation framework, not a hosted REST API surface. It is delivered as a family of Python and TypeScript packages (`traceloop-sdk`, `@traceloop/node-server-sdk`, and 30+ `opentelemetry-instrumentation-*` packages) that emit OpenTelemetry spans over OTLP. No first-party OpenAPI specification, plans, rate-limit, or FinOps artifacts are generated for this repo — those concerns sit with the downstream observability backend the user exports to (Traceloop, Datadog, Grafana, Honeycomb, etc.).
+**Kin Score 29.1** — thin · rubric 0.24.0 · scored 2026-10-17
 
-## Maintainers
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 31.6 |
+| Developer ergonomics | 33.3 |
+| Access clarity | 31.6 |
 
-**FN:** Kin Lane
+**Agent readiness 0.0** — human-only
 
-**Email:** kin@apievangelist.com
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.5** — AI & Biometrics
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/openllmetry/](https://apis.io/providers/openllmetry/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for OpenLLMetry: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/openllmetry/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
